@@ -1,0 +1,28 @@
+--- dmenu.c
++++ dmenu.c
+@@ -30,12 +30,15 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
+ 
+ struct item {
+ 	char *text;
++	char *text_output;
+ 	struct item *left, *right;
+ 	int out;
+ };
+ 
+ static char text[BUFSIZ] = "";
+ static char *embed;
++static char separator, separator_reverse;
++static char * (*sepchr)(const char *, int);
+ static int bh, mw, mh;
+ static int inputw = 0, promptw;
+ static int lrpad; /* sum of left and right padding */
+@@ -724,7 +740,8 @@ static void
+ usage(void)
+ {
+ 	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+-	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
++	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n"
++	    "             [-d separator] [-D separator]");
+ }
+ 
+ int
