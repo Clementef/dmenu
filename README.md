@@ -1,3 +1,16 @@
+# dmenu
+### personal build
+
+#### patches:
+	- dmenu-border-20230512-0fe460d.diff
+	- dmenu-center-5.2.diff
+	- dmenu-dracula-20211128-d78ff08.diff
+	- dmenu-fuzzyhighlight-caseinsensitive-4.9.diff
+	- dmenu-fuzzymatch-4.9.diff
+	- dmenu-lineheight-5.2.diff
+	- dmenu-linesbelowprompt-and-fullwidth-20211014.diff
+	- dmenu-separator-5.2.patch
+
 dmenu - dynamic menu
 ====================
 dmenu is an efficient dynamic menu for X.
