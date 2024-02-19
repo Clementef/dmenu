@@ -28,7 +28,7 @@
 
 /* enums */
 enum { SchemeNorm, SchemeSel, SchemeNormHighlight, SchemeSelHighlight,
-       SchemeOut, SchemeLast, SchemeBorder }; /* color schemes */
+       SchemeOut, SchemeLast }; /* color schemes */
 
 
 struct item {
