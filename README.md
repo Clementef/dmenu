@@ -1,6 +1,8 @@
 # dmenu
 ### personal build
 
+![dmenu_run](static/demo.png)
+
 #### patches:
 	- dmenu-border-20230512-0fe460d.diff
 	- dmenu-center-5.2.diff
