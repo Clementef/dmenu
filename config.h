@@ -7,7 +7,7 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"FiraCode Nerd Font:size=14"
+	"FiraCode Nerd Font:size=16"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
@@ -21,8 +21,8 @@ static const char *colors[SchemeLast][2] = {
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 6;
 /* -h option; minimum height of a menu line */
-static unsigned int lineheight = 35;
-static unsigned int min_lineheight = 20;
+static unsigned int lineheight = 45;
+static unsigned int min_lineheight = 30;
 
 /*
  * Characters not considered part of a word while deleting words
